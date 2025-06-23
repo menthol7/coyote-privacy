@@ -32,45 +32,6 @@
             width: 100%;
         }
 
-        .soccer-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.1;
-            z-index: 0;
-        }
-
-        .soccer-ball {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: 
-                radial-gradient(circle at 30% 30%, #ffffff 2px, transparent 2px),
-                radial-gradient(circle at 70% 20%, #ffffff 1px, transparent 1px),
-                radial-gradient(circle at 40% 70%, #ffffff 1px, transparent 1px),
-                radial-gradient(circle at 80% 80%, #ffffff 2px, transparent 2px),
-                linear-gradient(45deg, transparent 48%, #ffffff 48%, #ffffff 52%, transparent 52%),
-                linear-gradient(-45deg, transparent 48%, #ffffff 48%, #ffffff 52%, transparent 52%);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .soccer-ball:nth-child(1) {
-            top: 10%;
-            left: 80%;
-            animation-delay: 0s;
-        }
-
-        .soccer-ball:nth-child(2) {
-            top: 70%;
-            left: 10%;
-            width: 120px;
-            height: 120px;
-            animation-delay: 2s;
-        }
-
         .content {
             text-align: center;
             z-index: 10;
@@ -236,11 +197,6 @@
             transform: translateY(-3px);
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(10deg); }
-        }
-
         @keyframes glow {
             0% { filter: brightness(1); }
             100% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(16, 185, 129, 0.3)); }
@@ -271,20 +227,11 @@
             .features {
                 grid-template-columns: 1fr;
             }
-
-            .soccer-ball {
-                display: none;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="soccer-background">
-            <div class="soccer-ball"></div>
-            <div class="soccer-ball"></div>
-        </div>
-
         <div class="content">
             <h1 class="logo">SOQA</h1>
             <p class="tagline">AI for Soccer Fans</p>
@@ -292,7 +239,7 @@
             <div class="coming-soon">Coming Soon</div>
             
             <p class="description">
-                Get intelligent previews and picks for every soccer match worldwide, from top flights to the local competitions. 
+                Get intelligent previews and picks for every soccer match worldwide, from top flights to local competitions. 
                 <br><br>SOQA's AI analyzes teams, form, and betting market moves to give you insights no other platform provides.
             </p>
 
@@ -300,7 +247,7 @@
                 <div class="feature">
                     <div class="feature-icon">⚽</div>
                     <h3>Every Match Covered</h3>
-                    <p>From top leagues to local competitions, AI analyzes on every match</p>
+                    <p>From top leagues to local competitions, AI analysis on every match</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🤖</div>
