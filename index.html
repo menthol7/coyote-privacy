@@ -27,6 +27,9 @@
             align-items: center;
             padding: 2rem;
             position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
         }
 
         .soccer-background {
@@ -290,7 +293,7 @@
             
             <p class="description">
                 Get intelligent previews and picks for every soccer match worldwide, from top flights to the local competitions. 
-                SOQA's AI analyzes teams, form, and betting market moves to give you insights no other platform provides.
+                <br><br>SOQA's AI analyzes teams, form, and betting market moves to give you insights no other platform provides.
             </p>
 
             <div class="features">
@@ -345,17 +348,6 @@
             // In production, you'd send this to your backend/email service
             console.log('Email signup:', email);
         }
-
-        // Add some interactive elements
-        document.addEventListener('mousemove', (e) => {
-            const balls = document.querySelectorAll('.soccer-ball');
-            balls.forEach((ball, index) => {
-                const speed = (index + 1) * 0.01;
-                const x = e.clientX * speed;
-                const y = e.clientY * speed;
-                ball.style.transform += ` translate(${x}px, ${y}px)`;
-            });
-        });
     </script>
 </body>
 </html>
