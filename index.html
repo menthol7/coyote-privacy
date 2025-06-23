@@ -27,7 +27,7 @@
             align-items: center;
             padding: 2rem;
             position: relative;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             width: 100%;
         }
@@ -78,10 +78,11 @@
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
-            margin: 3rem 0;
-            max-width: 800px;
+            margin: 3rem auto;
+            max-width: 1000px;
+            width: 100%;
         }
 
         .feature {
@@ -92,6 +93,10 @@
             padding: 2rem;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .feature:hover {
@@ -228,6 +233,12 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
@@ -239,7 +250,7 @@
             <div class="coming-soon">Coming Soon</div>
             
             <p class="description">
-                Get intelligent previews and picks for every soccer match worldwide, from top flights to local competitions. 
+                Get intelligent previews and picks for every soccer match worldwide, from top flights to the local competitions. 
                 <br><br>SOQA's AI analyzes teams, form, and betting market moves to give you insights no other platform provides.
             </p>
 
@@ -247,7 +258,7 @@
                 <div class="feature">
                     <div class="feature-icon">⚽</div>
                     <h3>Every Match Covered</h3>
-                    <p>From top leagues to local competitions, AI analysis on every match</p>
+                    <p>From top leagues to local competitions, AI analyzes on every match</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🤖</div>
