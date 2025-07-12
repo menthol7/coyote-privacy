@@ -1,2 +1,2 @@
-# coyote-privacy
-coyote privacy page
+# JIXY-privacy
+JIXY privacy page
